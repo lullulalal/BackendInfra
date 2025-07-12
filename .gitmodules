@@ -1,3 +1,6 @@
 [submodule "DokkaebiImage-backend"]
 	path = DokkaebiImage-backend
 	url = https://github.com/lullulalal/DokkaebiImage-backend.git
+[submodule "MyFitnessRank-backend"]
+	path = MyFitnessRank-backend
+	url = https://github.com/lullulalal/MyFitnessRank-backend.git
