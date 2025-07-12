@@ -9,6 +9,15 @@ services:
     networks:
       - app-network
 
+  myfitnessrank:
+    build:
+      context: ./MyFitnessRank-backend
+      dockerfile: Dockerfile
+    expose:
+      - 8000
+    networks:
+      - app-network
+
   nginx:
     image: nginx:latest
     container_name: nginx
@@ -21,6 +30,7 @@ services:
       - "443:443"
     depends_on:
       - dokkaebiimage
+      - myfitnessrank
       - certbot
     networks:
       - app-network
